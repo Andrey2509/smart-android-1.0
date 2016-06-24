@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/linear_settings"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button_save_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Сохранить настройки"/>
+
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Адрес сервера в Интернет"
+          android:id="@+id/server_inet_text"
+          android:layout_gravity="center_horizontal" />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:inputType="textUri"
+          android:id="@+id/server_inet_edit"
+          android:layout_gravity="center_horizontal" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Адрес сервера в локальной сети"
+          android:id="@+id/server_local_text"
+          android:layout_gravity="center_horizontal" />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:inputType="textUri"
+          android:id="@+id/server_local_edit"
+          android:layout_gravity="center_horizontal" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Имя пользователя"
+          android:id="@+id/username_text"
+          android:layout_gravity="center_horizontal" />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:inputType="textNoSuggestions"
+          android:id="@+id/username_edit"
+          android:layout_gravity="center_horizontal" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Пароль"
+          android:id="@+id/userpassword_text"
+          android:layout_gravity="center_horizontal" />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:inputType="textPassword"
+          android:ems="10"
+          android:id="@+id/userpassword_edit"
+          android:layout_gravity="center_horizontal" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/linear_journal_images"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_refresh_journal_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="ОБНОВИТЬ"/>
+            <RadioGroup
+                android:id="@+id/radio_period_journal_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/day_period_journal_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="За сутки"
+                    android:checked="true" />
+                <RadioButton
+                    android:id="@+id/week_period_journal_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="За неделю" />
+                <RadioButton
+                    android:id="@+id/month_period_journal_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="За месяц" />
+
+            </RadioGroup>
+
+            <TableLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="vertical" android:layout_width="wrap_content"
+                android:id="@+id/table_journal_images"
+                android:layout_height="wrap_content">
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ru.smart.smart9">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+
+
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+
+
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:name="ru.smart.smart9.global"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+        <activity
+            android:name="ru.smart.smart9.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ru.smart.smart9.ViewSensors"/>
+        <activity android:name="ru.smart.smart9.SwitchRelays"/>
+        <activity android:name="ru.smart.smart9.Climate"/>
+        <activity android:name="ru.smart.smart9.Journal_switches"/>
+        <activity android:name="ru.smart.smart9.Journal_sensors"/>
+        <activity android:name="ru.smart.smart9.Journal_images"/>
+        <activity android:name="ru.smart.smart9.cameras"/>
+        <activity android:name="ru.smart.smart9.settings"/>
+        <activity android:name=".delete_Fullscreen"/>
+        <activity android:name="ru.smart.smart9.electro"/>
+
+
+    </application>
+
+    <activity   android:name=".AppPreferenceActivity" android:label="@string/app_name">
+        <intent-filter>
+            <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+
+
+</manifest>

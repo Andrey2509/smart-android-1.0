@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button_check_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="ПРОВЕРИТЬ"></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Доступ к интернет:"
+        android:id="@+id/inet_status"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button_check_connect" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Доступ к серверу через Интернет:"
+        android:id="@+id/server_inet_status"
+        android:layout_below="@+id/inet_status"
+        android:layout_toEndOf="@+id/button_check_connect" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Доступ к серверу через ЛВС:"
+        android:id="@+id/server_local_status"
+        android:layout_below="@+id/server_inet_status"
+        android:layout_toEndOf="@+id/button_check_connect" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Режим подключения:"
+        android:id="@+id/net_status"
+        android:layout_below="@+id/server_local_status"
+        android:layout_toEndOf="@+id/button_check_connect"
+        />
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Состояние датчиков"
+    android:onClick="showbuttons"
+    android:id="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="74dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Переключатели"
+        android:onClick="showbuttons"
+        android:id="@+id/switches"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Климат"
+        android:onClick="showbuttons"
+        android:id="@+id/climatebtn"
+        android:layout_below="@+id/switches"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Журнал переключений"
+        android:onClick="showbuttons"
+        android:id="@+id/journalbtn"
+        android:layout_below="@+id/climatebtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Журнал датчиков"
+        android:onClick="showbuttons"
+        android:id="@+id/journal_sensors_btn"
+        android:layout_below="@+id/journalbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Журнал снимков"
+        android:onClick="showbuttons"
+        android:id="@+id/journal_images_btn"
+        android:layout_below="@+id/journal_sensors_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Видеокамеры"
+        android:onClick="showbuttons"
+        android:id="@+id/camera_btn"
+        android:layout_below="@+id/journal_images_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Электроэнергия"
+        android:onClick="showbuttons"
+        android:id="@+id/electro_btn"
+        android:layout_below="@+id/camera_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:onClick="showbuttons"
+        android:id="@+id/settings_btn"
+        android:layout_below="@+id/electro_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

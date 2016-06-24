@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/linear_electro"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:fillViewport="true"
+        android:layout_height="wrap_content">
+            <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <Button
+                android:id="@+id/button_refresh_electro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="ОБНОВИТЬ"></Button>
+
+                <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:id="@+id/linear_electro_info"
+                android:layout_height="wrap_content">
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/radio_period_electro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/day_period_electro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="За сутки"
+                        android:checked="true" />
+                    <RadioButton
+                        android:id="@+id/week_period_electro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="За неделю" />
+                    <RadioButton
+                        android:id="@+id/month_period_electro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="За месяц" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/graphContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_blue_dark"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/table_electro_journal"
+                    android:layout_height="wrap_content">
+                </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
